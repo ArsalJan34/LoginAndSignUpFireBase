@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products</title>
+</head>
+
+<body>
+  <h1>Products</h1>
+  <button onclick="logout()">Logout</button>
+
+  <div id="products"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-auth-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAus_LhA6WhHTliGc4DzBHlEgU0wM_VJhw",
+      authDomain: "loginform-887bc.firebaseapp.com",
+      projectId: "loginform-887bc",
+      storageBucket: "loginform-887bc.firebasestorage.app",
+      messagingSenderId: "178270572080",
+      appId: "1:178270572080:web:953a0f1a234cc6570127f5"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="products.js"></script>
+</body>
+
+</html>

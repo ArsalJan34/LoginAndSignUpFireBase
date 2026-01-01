@@ -4,35 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+  <title>Login</title>
 </head>
 
 <body>
-  <form action="">
-    <input type="email" placeholder="Enter Email" required id="email" />
-    <input type="text" placeholder="Enter password" required id="password" />
-    <input type="submit" value="LOGIN" onclick="logIn()" />
 
-
-
+  <form onsubmit="logIn(event)">
+    <input type="email" id="email" placeholder="Enter Email" required />
+    <input type="password" id="password" placeholder="Enter Password" required />
+    <input type="submit" value="LOGIN" />
+    <input type="button" value="SIGN UP" onclick="openSignUp()" />
   </form>
-  <div id="products">
-
-  </div>
 
   <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-database-compat.js"></script>
-
-
-  <script>
-    const firebaseConfig = {
-
-    };
-
-    firebase.initializeApp(firebaseConfig);
-  </script>
-  <script src="login.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore-compat.js"></script>
+<script src="login.js"></script>
 </body>
 
 </html>
