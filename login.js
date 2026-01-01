@@ -36,7 +36,7 @@
         }
 
         // Redirect to products page
-        window.location.href = "products.html";
+        window.location.href = "prank.html";
       } catch (error) {
         alert(error.message);
       }
